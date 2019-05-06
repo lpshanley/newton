@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var app = angular.module("angularHelloWorldApp",[]);
+
+app.controller('MainController', ['$scope', function($scope) {
+
+
+	$scope.greeting = "Hello from Angular!";
+
+
+}]);]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_354457_newton_Hello World.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+	<g:requires name="x_354457_newton.angular.min.jsdbx"/>
+
+
+       <body ng-app="angularHelloWorldApp">
+
+
+               <div ng-controller="MainController">
+
+
+                       <h1>{{greeting}}</h1>
+
+
+               </div>
+
+
+       </body>
+	
+</j:jelly>]]></html>
+        <name>Hello World</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-06 20:55:12</sys_created_on>
+        <sys_id>d62304411b1533009c8232a3cc4bcbd1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Hello World</sys_name>
+        <sys_package display_value="Newton" source="x_354457_newton">4821c08d1bd133009c8232a3cc4bcb4d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Newton">4821c08d1bd133009c8232a3cc4bcb4d</sys_scope>
+        <sys_update_name>sys_ui_page_d62304411b1533009c8232a3cc4bcbd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-06 21:02:53</sys_updated_on>
+    </sys_ui_page>
+</record_update>
